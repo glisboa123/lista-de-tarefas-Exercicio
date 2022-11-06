@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #7c7672;
+    --primary-color-dark: #e2e2e2;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open-sans', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #e2e2e2;
+    padding: 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+    p {
+        display: flex;
+        justify-content: space-between;}
+    .input-nova-tarefa {
+        flex-grow: 1;
+        border: 1px solid black;
+        padding: 0;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+.input-nova-tarefa {
+    flex-grow: 1;
+    border: 1px solid black;
+    padding: 0;
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+.btn-add-tarefa {
+    border: 0px;
+    border-left: 1px;
+    cursor: pointer;
+    background-color: #778899;
+    padding: 0px 2px 0px 2px;
+    transition: all 300ms ease-in-out;
+    border-radius: 2px;
+    font-size: 1rem;
+}
+
+.btn-add-tarefa:hover {
+    background-color: #2F4F4F;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    border-bottom: 1.5px #a8a09a solid;
+    font-size: 1.5rem;
+}
+
+.apagar {
+    background-color: #FF0000;
+    padding: 0;
+    font-size: 0, 7rem;
+    width: 1.2rem;
+    height: 1.4rem;
+    border: #DC143C 0.01rem solid;
+    border-radius: 100px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.apagar:hover {
+    background-color: red;
+}
+
+.tarefas {
+    padding: 0;
+}
